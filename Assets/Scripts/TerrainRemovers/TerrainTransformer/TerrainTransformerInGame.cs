@@ -53,6 +53,6 @@ public class TerrainTransformerInGame : MonoBehaviour
 
         // Update the terrain with the modified tree instances
         terrainData.treeInstances = updatedTreeInstances.ToArray();
-        Debug.Log("Tree removal completed!");
+        Debug.Log("Terrain Objects Removal completed!");
     }
 }
