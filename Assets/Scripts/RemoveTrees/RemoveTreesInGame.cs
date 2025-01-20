@@ -5,7 +5,8 @@ using UnityEngine;
 public class RemoveTreesInGame : MonoBehaviour
 {
     public Terrain terrain;
-    public float waterLevel = 287f;
+    public float lowerWaterLevel = 287f;
+    public float upperWaterLevel = 350f;
 
     public void RemoveTreesUnderWater()
     {
@@ -17,7 +18,7 @@ public class RemoveTreesInGame : MonoBehaviour
         {
             Vector3 treePosition = Vector3.Scale(treeInstance.position, terrainData.size) + terrain.transform.position;
 
-            if (treePosition.y >= waterLevel)
+            if (treePosition.y >= lowerWaterLevel && treePosition.y <= upperWaterLevel)
             {
                 updatedTreeInstances.Add(treeInstance);
             }
