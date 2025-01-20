@@ -5,7 +5,7 @@ using UnityEngine;
 public class RemoveTreesInGame : MonoBehaviour
 {
     public Terrain terrain;
-    public float waterLevel = 290f;
+    public float waterLevel = 287f;
 
     public void RemoveTreesUnderWater()
     {
