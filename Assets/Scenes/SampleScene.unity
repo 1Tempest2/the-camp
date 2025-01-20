@@ -709,10 +709,10 @@ Terrain:
   serializedVersion: 6
   m_TerrainData: {fileID: 15600000, guid: d71441f22a11442438d35f7df4658a9a, type: 2}
   m_TreeDistance: 5000
-  m_TreeBillboardDistance: 33
+  m_TreeBillboardDistance: 100
   m_TreeCrossFadeLength: 5
   m_TreeMaximumFullLODCount: 50
-  m_DetailObjectDistance: 23
+  m_DetailObjectDistance: 100
   m_DetailObjectDensity: 1
   m_HeightmapPixelError: 5
   m_SplatMapDistance: 1000
@@ -769,7 +769,7 @@ MonoBehaviour:
   blendMode: 0
   opacity: 100
   passIndex: 0
-  min: 310
+  min: 286
   minFalloff: 1
   max: 2000
   maxFalloff: 1
@@ -923,7 +923,7 @@ MonoBehaviour:
   blendMode: 0
   opacity: 100
   passIndex: 0
-  min: 250
+  min: 210
   minFalloff: 1
   max: 2000
   maxFalloff: 1
