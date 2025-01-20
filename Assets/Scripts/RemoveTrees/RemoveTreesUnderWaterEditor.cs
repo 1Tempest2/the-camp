@@ -11,7 +11,7 @@ public class RemoveUnderwaterTreesEditor : Editor
         DrawDefaultInspector();
         RemoveTreesInGame underwaterTreesScript = (RemoveTreesInGame)target;
 
-        if (GUILayout.Button("Remove Underwater Trees"))
+        if (GUILayout.Button("Remove Trees"))
         {
             underwaterTreesScript.RemoveTreesUnderWater();
         }
