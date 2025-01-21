@@ -1,8 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Netcode;
 using UnityEngine;
 
-public class PlayerMovementGeneral : MonoBehaviour
+public class PlayerMovementGeneral : NetworkBehaviour
 {
     public CharacterController controller;
 
@@ -21,6 +22,7 @@ public class PlayerMovementGeneral : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (!IsOwner) return;
         //checking if we hit the ground to reset our falling velocity, otherwise we will fall faster the next time
         isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
 
