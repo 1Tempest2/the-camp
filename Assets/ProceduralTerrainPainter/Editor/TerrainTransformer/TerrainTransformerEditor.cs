@@ -4,7 +4,7 @@ using UnityEditor;
 using UnityEngine;
 
 [CustomEditor(typeof(TerrainTransformerInGame))]
-public class TerrainTransformerEdtior : Editor
+public class TerrainTransformerEditor : Editor
 {
     public override void OnInspectorGUI()
     {
