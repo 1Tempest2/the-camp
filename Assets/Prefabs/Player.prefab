@@ -280,7 +280,8 @@ GameObject:
   - component: {fileID: 59986476498219545}
   - component: {fileID: 3678171974864347155}
   - component: {fileID: -5892070903368081663}
-  - component: {fileID: -2153777895301753892}
+  - component: {fileID: -7512921957743686741}
+  - component: {fileID: -9169706921563659349}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -295,7 +296,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7893022453406255129}
-  m_LocalRotation: {x: 0, y: 0.5501893, z: 0, w: 0.83504}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 550, y: 450, z: 400}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -305,7 +306,7 @@ Transform:
   - {fileID: 4856658609800018266}
   m_Father: {fileID: 0}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 66.76, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!143 &3075156608070543484
 CharacterController:
   m_ObjectHideFlags: 0
@@ -386,7 +387,7 @@ MonoBehaviour:
   SpawnWithObservers: 1
   DontDestroyWithOwner: 0
   AutoObjectParentSync: 1
---- !u!114 &-2153777895301753892
+--- !u!114 &-7512921957743686741
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -395,7 +396,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7893022453406255129}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e96cb6065543e43c4a752faaa1468eb1, type: 3}
+  m_Script: {fileID: 11500000, guid: 5c3fae8cc60fbdd488c98bba281ce3ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   SyncPositionX: 1
@@ -416,3 +417,16 @@ MonoBehaviour:
   InLocalSpace: 0
   Interpolate: 1
   SlerpPosition: 0
+--- !u!114 &-9169706921563659349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7893022453406255129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f488aa3445d5ad74db477f724259cca0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnPosition: {x: 300, y: 300, z: 300}
