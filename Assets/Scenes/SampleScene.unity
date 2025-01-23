@@ -287,9 +287,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b279bc4c65007d449f01f7667525ab4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  terrain: {fileID: 970466486}
-  lowerWaterLevel: 280
-  upperWaterLevel: 350
 --- !u!4 &70912819
 Transform:
   m_ObjectHideFlags: 0
@@ -342,7 +339,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -16, y: -50}
+  m_AnchoredPosition: {x: -16, y: -30}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &119039943
@@ -663,7 +660,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -16, y: -85}
+  m_AnchoredPosition: {x: -16, y: -60}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &650975549
@@ -1497,11 +1494,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a23028ac0311d2145813169ef6335275, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  terrain: {fileID: 970466486}
-  WaterLevel: 287
-  lowerTreeLevel: 287
-  upperTreeLevel: 350
-  stonePrototypeIndices: 02000000060000000700000008000000090000000a0000000b0000000c0000000d000000
 --- !u!4 &1204429927
 Transform:
   m_ObjectHideFlags: 0
@@ -1550,6 +1542,59 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1525607594
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1525607596}
+  - component: {fileID: 1525607595}
+  m_Layer: 0
+  m_Name: RunTimeStatsMonitor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1525607595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1525607594}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17737e0516da2445b9b0077ae2bd9b4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Visible: 1
+  m_MaxRefreshRate: 30
+  <CustomStyleSheet>k__BackingField: {fileID: 0}
+  <PanelSettingsOverride>k__BackingField: {fileID: 0}
+  <Position>k__BackingField:
+    <OverridePosition>k__BackingField: 1
+    m_PositionLeftToRight: 0
+    m_PositionTopToBottom: 0
+  <Configuration>k__BackingField: {fileID: 11400000, guid: 8f1b4e3792d8446399527749cfb591a2, type: 2}
+--- !u!4 &1525607596
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1525607594}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 399.69366, y: 331.11407, z: 288.35623}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1668006069
 GameObject:
   m_ObjectHideFlags: 0
@@ -1579,10 +1624,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f87661895f117f4692ee15d88e9dcf6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  terrain: {fileID: 970466486}
-  lowerWaterLevel: 287
-  upperWaterLevel: 350
-  stonePrototypeIndices: 0200000006000000
 --- !u!4 &1668006071
 Transform:
   m_ObjectHideFlags: 0
@@ -1753,7 +1794,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -16, y: -15}
+  m_AnchoredPosition: {x: -16, y: 0}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &1914095043
